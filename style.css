@@ -508,7 +508,7 @@ form p{
         font-size:12px;
     }
 
-    input{
+    input[type="button"]{
         -webkit-appearance: none;
         appearance: none;
     }
