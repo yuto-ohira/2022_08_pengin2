@@ -878,8 +878,9 @@ form p{
     .works-btn{
         width:62.67%;
         height:3.5%;
-        top:18%;
+        top:13.5%;
         left:18%;
+        display:block;
     }
 
     .works h2{
