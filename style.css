@@ -511,6 +511,7 @@ form p{
     input[type="button"]{
         -webkit-appearance: none;
         appearance: none;
+        display:block;
     }
 
     .fv-contents{
