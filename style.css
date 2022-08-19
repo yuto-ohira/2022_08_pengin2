@@ -510,6 +510,7 @@ form p{
 
     input{
         -webkit-appearance: none;
+        appearance: none;
     }
 
     .fv-contents{
