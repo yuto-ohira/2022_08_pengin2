@@ -960,6 +960,7 @@ form p{
         height:10%;
         left:18%;
         top:45%;
+        display:block;
     }
 
     .contact h1{
@@ -1020,6 +1021,7 @@ form p{
         height:7%;
         left:15%;
         top:10%;
+        display:block;
     }
 
     footer p{
