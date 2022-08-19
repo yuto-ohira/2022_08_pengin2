@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="js/index.js">
+    <title>cording_lesson2(pengin blog)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Noto+Serif+JP:wght@600&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-title">
+            <h2><a href="#top">Cresta Design</a></h2>
+        </div>
+        <div class="header-menu">
+            <p><a href="#concept">Concept</a></p>
+            <p><a href="#works">Works</a></p>
+            <p><a href="#service">Service</a></p>
+            <p><a href="#contact">Contact</a></p>
+        </div>
+        <div class="humberger" id="humberger">
+            <span id="humberger-top"></span>
+            <span id="humberger-center"></span>
+            <span id="humberger-bottom"></span>
+        </div>
+        <div class="humberger-menu" id="humberger-menu">
+            <ul>
+                <li><a href="#concept" id="menu1">Concept</a></li>
+                <li><a href="#works" id="menu2">Works</a></li>
+                <li><a href="#service" id="menu3">Service</a></li>
+                <li><a href="#contact" id="menu4">Cotact</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="fv" id="top">
+            <div class="fv-contents">
+                <h1>Design for Smile.</h1>
+                <h2>快適なオフィスをデザインする</h2>
+            </div>
+        </div>
+        <div class="concept" id="concept">
+            <div class="concept-contents">
+                <h1>CONCEPT </h1><hr>
+                <h3>
+                    “働きたくなる空間”をデザインすることで<br>人々を幸せにする。
+                </h3>
+                <p>私たちは、オフィスに特化した空間デザイン専門としております。その理由は、「働きたくなる空間で仕事ができれば多くの人を幸せにできるのではないか」と考えるためです。そんな想いの株式会社Cresta Designだからこそできる空間デザインを提供させていただきます。</p>
+                <img src="images/concept-image.png">    
+                <h2>Our Concept</h2>
+            </div>
+        </div>
+        <div class="works" id="works">
+            <h1>Works </h1><hr>
+            <div class="cards">
+                <div class="card card1">
+                    <img src="images/card-img01.png">
+                    <p>新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。</p>
+                </div>
+                <div class="card card2">
+                    <img src="images/card-img02.png">
+                    <p>新規サイトを公開しました。今回のサイトは白と黒を基調にした</p>
+                </div>
+                <div class="card card3">
+                    <img src="images/card-img03.png">
+                    <p>新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。</p>
+                </div>
+            </div>
+            <input type="button" value="View more" class="works-btn">
+            <h2>Our Works</h2>
+        </div>
+        <div class="service" id="service">
+            <h2>Service </h2><hr>
+            <div class="serviceImages">
+                <div class="serviceImg img1">
+                    <h3>Hearing</h3>
+                </div>
+                <div class="serviceImg img2">
+                    <h3>Planning</h3>
+                </div>
+                <div class="serviceImg img3">
+                    <h3>Direction</h3>
+                </div>
+            </div>
+            <h1>Our Service</h1>
+        </div>
+        <div class="contact" id="contact">
+            <h2>Contact </h2><hr>
+            <p>お気軽にご相談ください。</p>
+            <input type="button" value="Contact" class="contact-btn" onclick="location.href='inquiry/index.html'">
+            <h1>Contact us</h1>
+        </div>
+        <footer>
+            <p>©cresta.design all rights reserved</p>
+        </footer>
+    </main>
+    <script src="js/jquery.bgswitcher.js"></script>
+    <script>
+        jQuery(function($){
+            $('.fv').bgSwitcher({
+                images:['images/fv-bgi_01.png','images/fv-bgi_02.png','images/fv-bgi_03.png'],
+                loop: true,
+                interval: 5000,
+                duration: 2000
+            });
+
+            var header = jQuery('header');
+            var height = jQuery(window).height();
+            jQuery(window).scroll(function(){
+                if(jQuery(this).scrollTop() > height){
+                    header.css('background-color','rgba(40,47,53,1.0)');
+                }else{
+                    header.css('background-color','rgba(40,47,53,0)');
+                }
+            });
+
+            jQuery('a[href*="#"]').click(function(){
+                var elmHash = jQuery(this).attr('href');
+                var pos = jQuery(elmHash).offset().top;
+                jQuery('body,html').animate({scrollTop: pos},1000);
+                return false;
+            });
+        });
+    </script>
+    <script src="js/index.js"></script>
+</body>

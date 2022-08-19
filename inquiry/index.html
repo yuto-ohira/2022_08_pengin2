@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../js/index.js">
+    <title>お問い合わせフォーム</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Noto+Serif+JP:wght@600&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="inquiry-header">
+        <div class="header-title">
+            <h2><a href="../index.html#top">Cresta Design</a></h2>
+        </div>
+        <div class="header-menu">
+            <p><a href="../index.html#concept">Concept</a></p>
+            <p><a href="../index.html#works">Works</a></p>
+            <p><a href="../index.html#service">Service</a></p>
+            <p><a href="../index.html#contact">Contact</a></p>
+        </div>
+        <div class="humberger" id="humberger">
+            <span id="humberger-top"></span>
+            <span id="humberger-center"></span>
+            <span id="humberger-bottom"></span>
+        </div>
+        <div class="humberger-menu" id="humberger-menu">
+            <ul>
+                <li><a href="#concept" id="menu1">Concept</a></li>
+                <li><a href="#works" id="menu2">Works</a></li>
+                <li><a href="#service" id="menu3">Service</a></li>
+                <li><a href="#contact" id="menu4">Cotact</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="inquiry-fv">
+        <h2>Contact</h2>
+        <h1>Contact us</h1>
+    </div>
+    <div class="contact-form">
+        <form action="">
+            <p>お問い合わせ内容</p>
+            <span><input type="checkbox" class="checkbox-top"> 資料請求</span>
+            <span><input type="checkbox" class="checkbox"> お電話でのご相談を希望</span>
+            <span><input type="checkbox" class="checkbox"> 申し込み</span>
+            <p>担当者名</p>
+            <input type="text" id="name">
+            <p>電話番号</p>
+            <input type="text" id="number">
+            <p>メールアドレス</p>
+            <input type="text" id="email">
+            <p>その他</p>
+            <textarea></textarea>
+            <input type="button" value="Submit" class="inquiry-btn">
+        </form>
+    </div>
+    <footer>
+        <p>©cresta.design all rights reserved</p>
+    </footer>
+    <script src="../js/index.js"></script>
+</body>
